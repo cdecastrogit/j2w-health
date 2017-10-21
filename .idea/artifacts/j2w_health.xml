@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="j2w-health">
+    <output-path>$PROJECT_DIR$/docker-dir</output-path>
+    <root id="archive" name="j2w-health.war">
+      <element id="javaee-facet-resources" facet="j2w-health/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="j2w-health" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="dir-copy" path="$PROJECT_DIR$/lib" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
