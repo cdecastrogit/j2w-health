@@ -17,3 +17,13 @@ services:
       - MSSQL_SA_PASSWORD=MSSQLpwd123^&1
     ports:
       - "1433:1433"
+  jobcore:
+    image: solr:6
+    ports:
+      - "8983:8983"
+#      http://localhost:8983
+
+  httpd:
+    image: httpd:2.4
+    ports:
+      - "8080:80"
